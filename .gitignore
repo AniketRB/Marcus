@@ -1,0 +1,27 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+service-account*.json
+
+# Dependencies and generated files
+node_modules/
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db
+
+# Local data, media and scratch work
+work/
+.local/
+*.pdf
+*.sqlite*
