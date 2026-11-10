@@ -1172,3 +1172,69 @@ dialog p {
     }
   }
 }
+.private-app {
+  max-width: 850px;
+  margin: auto;
+  padding: 40px 24px 90px;
+  min-height: 100vh;
+}
+.private-app > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.private-app form {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 26px;
+  margin: 32px 0;
+}
+.private-app form h2 {
+  margin-bottom: 15px;
+}
+.private-app label {
+  display: block;
+  font-size: 12px;
+  margin: 15px 0;
+}
+.private-app input,
+.private-app textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  padding: 12px;
+  margin-top: 7px;
+}
+.private-app textarea {
+  min-height: 140px;
+}
+.private-app button {
+  min-height: 44px;
+}
+.private-app form button {
+  margin-right: 10px;
+}
+.reader-books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 15px;
+}
+.reader-books button {
+  text-align: left;
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 22px;
+}
+.reader-books h2 {
+  font-size: 28px;
+}
+.reader-books p {
+  color: var(--muted);
+  font-size: 12px;
+}
+.private-app section[aria-label] {
+  margin-top: 25px;
+}

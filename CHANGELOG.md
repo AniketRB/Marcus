@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+### Phase 2 in progress
+
+- Added the first authenticated path for email/Google sign-in, private books and text posts.
+- Added ownership policies for profiles, books and entries, plus a cross-owner entry guard.
+- Created the free Marginalia Development Supabase project, applied both migrations, fixed the function search path advisory, and configured the local browser with its publishable key.
+- Live service testing, media, offline drafts and sync remain to be completed.
+
 ### Added
 
 - Documentation-only repository bootstrap, product flow, design direction and architecture.

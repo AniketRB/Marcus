@@ -24,6 +24,8 @@ import {
   ChevronDown,
 } from "lucide-react";
 import "./style.css";
+import { configured } from "./supabase";
+import { PrivateApp } from "./PrivateApp";
 
 const books = [
   {
@@ -597,8 +599,12 @@ function Gallery() {
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    {configured ? (
+      <PrivateApp />
+    ) : (
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    )}
   </React.StrictMode>,
 );
