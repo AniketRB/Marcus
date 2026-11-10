@@ -8,6 +8,8 @@ The founder approved the build plan on 2026-11-08. Phase 1 provides a runnable d
 
 ## Run the preview
 
+Phase 2 is in progress. Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` in an ignored `.env.local` to enable the private account, book and text-post flow. Apply `supabase/migrations/202611100001_private_library.sql` to a development Supabase project first. Email confirmation and Google OAuth must be configured in that project. Without configuration, the Phase 1 design preview continues to run.
+
 Use Node 22.19.0 (see `.nvmrc`) and npm. Dependencies are exactly pinned with a committed lockfile.
 
 ```sh
