@@ -8,6 +8,8 @@ These are the proposed stack baseline carried forward from the stack discussion.
 
 ## Intended layout
 
+Phase 1 implementation uses a single npm package with `src/` and `api/` to keep installation straightforward. Custom CSS provides the visual tokens; native dialog and controls provide the initial interactions. Tailwind/Radix, server-data management and offline-draft libraries are deferred until their features require them. The future package layout below remains the extraction direction as domain logic grows.
+
 `apps/web` for the PWA; `apps/api` for routes and runtime adapters; `packages/domain` for portable business rules and validation; `packages/prompts` for versioned prompt files; `packages/journal-template` for export layout; `supabase` for migrations and access policies; `docs` for maintained decisions. Create application directories only after plan approval.
 
 ## Boundaries
