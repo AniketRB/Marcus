@@ -4,7 +4,29 @@ A private reading companion and self-assembling journal, with an opt-in gallery 
 
 ## Current state
 
-Gate 3 bootstrap: documentation and repository safeguards only. There is no application, development server, deployed service, or installed application dependency yet. The founder authorized starting development on 2026-11-08; the original brief still requires approval of the concrete build plan before application implementation.
+The founder approved the build plan on 2026-11-08. Phase 1 provides a runnable design preview of Library, Journal, Ask and Gallery, a portable Hono health API, PWA shell and automated quality checks. Sample content is illustrative. Accounts, AI, persistence and actual publication are not connected. Phase 2 awaits interface review.
+
+## Run the preview
+
+Use Node 22.19.0 (see `.nvmrc`) and npm. Dependencies are exactly pinned with a committed lockfile.
+
+```sh
+npm ci
+npm run dev
+# In another terminal, if testing the API:
+npm run dev:api
+```
+
+Vite prints the local preview URL. The API health route is `http://localhost:10000/health`. No credentials are required for this phase.
+
+```sh
+npm run format:check
+npm run check
+npx playwright install chromium
+npm run test:e2e
+```
+
+`npm run build` creates the production PWA in `dist`. Test service-worker behavior with a production preview; it is not enabled in development. Fonts currently load from Google Fonts with local serif/sans fallbacks. Real-device installation and offline draft storage are not yet verified/implemented.
 
 ## Product and decisions
 
